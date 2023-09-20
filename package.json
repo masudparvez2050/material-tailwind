@@ -6,12 +6,12 @@
   "repository": "https://github.com/creativetimofficial/material-tailwind",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && npm run sitemap",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build && npm run sitemap",
     "sitemap": "next-sitemap",
     "build:react": "pnpm --filter ./packages/material-tailwind-react build",
     "build:html": "pnpm --filter ./packages/material-tailwind-html build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "export": "next export",
     "lint": "next lint"
   },
