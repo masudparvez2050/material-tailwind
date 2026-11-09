@@ -2,8 +2,8 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev",
+    "build": "node init && remix build",
+    "dev": "node init && remix dev",
     "typecheck": "tsc"
   },
   "dependencies": {

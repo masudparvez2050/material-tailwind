@@ -19,8 +19,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
+    "dev": "node init && unbuild --stub",
+    "build": "node init && unbuild",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
